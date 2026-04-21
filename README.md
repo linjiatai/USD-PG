@@ -30,7 +30,34 @@ shifts. It highlights the potential of USD-PG for enhancing domain generalizatio
 ## Usage
 
 ### GDPH-CRC-HE-MS Dataset
-The GDPH-CRC-HE-MS dataset can be downloaded in [OneDrive](https://1drv.ms/u/c/a5c29d99ada8ad03/EYawHkl-3kJClFUywW1rxAEBMJREziay6_CrIVc7wBDlfQ?e=Sir6wg) or [Baidu Netdisk](https://pan.baidu.com/s/1k_ScOvAERWrjhJWfAA6RyQ?pwd=t3c2) (with pass code **t3c2**), and put them into ```DATA/``` fold.
+You should download the GDPH-CRC-HE-MS dataset at [OneDrive](https://1drv.ms/u/c/a5c29d99ada8ad03/EYawHkl-3kJClFUywW1rxAEBMJREziay6_CrIVc7wBDlfQ?e=Sir6wg) or [Baidu Netdisk](https://pan.baidu.com/s/1k_ScOvAERWrjhJWfAA6RyQ?pwd=t3c2) (with pass code **t3c2**), and the NCT-CRC-HE-100K dataset at [Official Website](https://zenodo.org/records/1214456). Then, you can put them into ```DATA/``` fold with the following data structure:
+```
+DATA/
+
+    |_ GDPH-CRC-HE-MS/
+    |     |_ training/
+    |         |_ S01/
+    |            |_ BACK/
+    |            |_ NORM/
+    |            |_ MUC/
+    |            |_ DEB/
+    |            |_ LYM/
+    |            |_ ADI/
+    |            |_ STR/
+    |            |_ TUM/
+    |            |_ MUS/
+    |         |_ S02/
+    |         |_ S03/
+    |         |_ S04/
+    |         |_ S05/
+    |         |_ S06/
+    |     |_ test/
+    |         |_ S01/
+    |            |_ .../
+    |_ NCT-CRC-HE-100K/
+    |      |_ ...
+      
+```
 
 ### Pretraining
 ```
@@ -48,5 +75,11 @@ python main.py --...
 ## Citation
 If you find the code useful, please consider citing our paper using the following BibTeX entry.
 ```
-@ARTICLE{}
+@ARTICLE{lin2026usd-pg,
+  author={Lin, Jiatai and Han, Guoqiang and Pan, Xipeng and Liu, Zaiyi and Chen, Hao and Li, Danyi and Jia, Xiping and Shi, Zhenwei and Wang, Zhizhen and Cui, Yanfen and Li, Haiming and Liang, Changhong and Liang, Li and Wang, Ying and Han, Chu},
+  journal={IEEE Transactions on Medical Imaging}, 
+  title={PDBL: Improving Histopathological Tissue Classification with Plug-and-Play Pyramidal Deep-Broad Learning}, 
+  year={2022},
+  pages={1-1},
+  doi={10.1109/TMI.2022.3161787}}
 ```
