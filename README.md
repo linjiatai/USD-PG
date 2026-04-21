@@ -29,7 +29,7 @@ shifts. It highlights the potential of USD-PG for enhancing domain generalizatio
 - scikit-learn==0.24.2
 ## Usage
 
-### GDPH-CRC-HE-MS Dataset
+### Dataset Preparation
 You should download the GDPH-CRC-HE-MS dataset at [OneDrive](https://1drv.ms/u/c/a5c29d99ada8ad03/EYawHkl-3kJClFUywW1rxAEBMJREziay6_CrIVc7wBDlfQ?e=Sir6wg) or [Baidu Netdisk](https://pan.baidu.com/s/1k_ScOvAERWrjhJWfAA6RyQ?pwd=t3c2) (with pass code **t3c2**), and the NCT-CRC-HE-100K dataset at [Official Website](https://zenodo.org/records/1214456). Then, you can put them into ```DATA/``` fold with the following data structure:
 ```
 DATA/
@@ -59,7 +59,7 @@ DATA/
       
 ```
 
-### Pretraining
+### Main training
 ```
 python main.py --...
 ```
