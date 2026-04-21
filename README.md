@@ -29,7 +29,8 @@ shifts. It highlights the potential of USD-PG for enhancing domain generalizatio
 - scikit-learn==0.24.2
 ## Usage
 
-### DATASET Downloading
+### GDPH-CRC-HE-MS Dataset
+The GDPH-CRC-HE-MS dataset can be downloaded in [OneDrive](https://1drv.ms/u/c/a5c29d99ada8ad03/EYawHkl-3kJClFUywW1rxAEBMJREziay6_CrIVc7wBDlfQ?e=Sir6wg) or [Baidu Netdisk](https://pan.baidu.com/s/1k_ScOvAERWrjhJWfAA6RyQ?pwd=t3c2) (with pass code **t3c2**)
 
 ### Pretraining
 ```
