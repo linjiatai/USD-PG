@@ -76,10 +76,11 @@ python main.py --...
 If you find the code useful, please consider citing our paper using the following BibTeX entry.
 ```
 @ARTICLE{lin2026usd-pg,
-  author={Lin, Jiatai and Han, Guoqiang and Pan, Xipeng and Liu, Zaiyi and Chen, Hao and Li, Danyi and Jia, Xiping and Shi, Zhenwei and Wang, Zhizhen and Cui, Yanfen and Li, Haiming and Liang, Changhong and Liang, Li and Wang, Ying and Han, Chu},
-  journal={IEEE Transactions on Medical Imaging}, 
-  title={PDBL: Improving Histopathological Tissue Classification with Plug-and-Play Pyramidal Deep-Broad Learning}, 
-  year={2022},
-  pages={1-1},
-  doi={10.1109/TMI.2022.3161787}}
+  author={Lin, Jiatai and Li, Qian and Cui, Yanfen and Zhao, Bingchao and Deng, Tianpeng and Huang, Jingqi and Shi, Zhenwei and Cui, Enming and Liu, Zaiyi and Zhao, Ke and Han, Chu and Huang, Yanqi},
+  journal={Medical Image Analysis}, 
+  title={Unsupervised Single-Domain Generalization for Tissue Classification via Progressive Domain Transformation}, 
+  year={2026},
+  pages={},
+  doi={}
+}
 ```
