@@ -22,24 +22,24 @@ shifts. It highlights the potential of USD-PG for enhancing domain generalizatio
 ## Usage
 
 ### Dataset Preparation
-You should download the GDPH-CRC-HE-MS dataset at [OneDrive](https://1drv.ms/u/c/a5c29d99ada8ad03/EYawHkl-3kJClFUywW1rxAEBMJREziay6_CrIVc7wBDlfQ?e=Sir6wg) or [Baidu Netdisk](https://pan.baidu.com/s/1k_ScOvAERWrjhJWfAA6RyQ?pwd=t3c2) (with pass code **t3c2**), and the NCT-CRC-HE-100K dataset at [Official Website](https://zenodo.org/records/1214456). Then, you can put them into ```DATA/``` fold with the following data structure:
+You should download the GDPH-CRC-HE-MS dataset at [OneDrive](https://1drv.ms/u/c/a5c29d99ada8ad03/EYawHkl-3kJClFUywW1rxAEBMJREziay6_CrIVc7wBDlfQ?e=Sir6wg) or [Baidu Netdisk](https://pan.baidu.com/s/1k_ScOvAERWrjhJWfAA6RyQ?pwd=t3c2) (with pass code **t3c2**) and you can put them into ```DATA/``` fold with the following data structure. Then we randomly selected 1% of the samples for the second-stage model training and placed them in the ```DATA/one_percent_labeled``` folder, with the structure as shown below::
 ```
 DATA/
 
     |_one_percent_labeled/
     |     |_ S01
-    |            |_ train
-    |                |_ BACK/
-    |                |_ NORM/
-    |                |_ MUC/
-    |                |_ DEB/
-    |                |_ LYM/
-    |                |_ ADI/
-    |                |_ STR/
-    |                |_ TUM/
-    |                |_ MUS/
-    |            |_ val
-    |                |_ ...
+    |         |_ train
+    |            |_ BACK/
+    |            |_ NORM/
+    |            |_ MUC/
+    |            |_ DEB/
+    |            |_ LYM/
+    |            |_ ADI/
+    |            |_ STR/
+    |            |_ TUM/
+    |            |_ MUS/
+    |         |_ val
+    |            |_ ...
     |     |_ S02
     |     |_ S03
     |     |_ ...
