@@ -1,10 +1,4 @@
 #!/usr/bin/env python
-# Copyright (c) Meta Platforms, Inc. and affiliates.
-
-# This source code is licensed under the MIT license found in the
-# LICENSE file in the root directory of this source tree.
-
-
 import argparse
 import builtins
 import os
@@ -36,9 +30,9 @@ model_names = sorted(
     if name.islower() and not name.startswith("__") and callable(models.__dict__[name])
 )
 
-parser = argparse.ArgumentParser(description="PyTorch ImageNet Training")
+parser = argparse.ArgumentParser()
 
-parser.add_argument("--source_domain", default='K19', type=str)
+parser.add_argument("--source_domain", default='S01', type=str)
 parser.add_argument(
     "-a",
     "--arch",
@@ -133,7 +127,6 @@ parser.add_argument(
 )
 parser.add_argument("--gpu", default=0, type=int, help="GPU id to use.")
 
-# parser.add_argument("--experiment", default='K19ToS06', help='name of experiment')
 
 best_acc1 = 0
 
@@ -141,8 +134,7 @@ best_acc1 = 0
 def main():
     args = parser.parse_args()
     args.pretrained='./checkpoints/Phase1_'+args.source_domain+'.pth.tar'
-    # args.pretrained='checkpoints/K19_0199.pth.tar'
-    args.data='./DATA/label/'+args.source_domain
+    args.data='./DATA/one_percent_labeled/'+args.source_domain
     args.experiment = args.source_domain
     if args.seed is not None:
         random.seed(args.seed)
