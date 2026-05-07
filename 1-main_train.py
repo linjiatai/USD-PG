@@ -47,10 +47,10 @@ model_names = sorted(
 )
 
 parser = argparse.ArgumentParser(description="PyTorch ImageNet Training")
-parser.add_argument("--data",default = './DATA/NCT-CRC-HE-100K', metavar="DIR", help="path to dataset")
-parser.add_argument("--root",default = './DATA/NCT-CRC-HE-100K', metavar="DIR", help="path to dataset")
-parser.add_argument("--source_domain",default = 'K19', type=str)
-parser.add_argument("--files", default=['preprocess/K19_LAB.yaml', 'preprocess/K19_HSV.yaml', 'preprocess/K19_HED.yaml'])
+parser.add_argument("--data",default = './DATA/GDPH-CRC-HE-MS/S01', metavar="DIR", help="path to dataset")
+parser.add_argument("--root",default = './DATA/GDPH-CRC-HE-MS/S01', metavar="DIR", help="path to dataset")
+parser.add_argument("--source_domain",default = '/S01', type=str)
+parser.add_argument("--files", default=['preprocess//S01_LAB.yaml', 'preprocess//S01_HSV.yaml', 'preprocess//S01_HED.yaml'])
 
 parser.add_argument(
     "-a",
