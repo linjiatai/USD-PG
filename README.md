@@ -19,14 +19,6 @@ generalization ability of the USD-PG framework on the new GDPH-CRC-HE-MS dataset
 that USD-PG achieves superior performance in single-source domain generalization for tissue classification, effectively handling both scanner-based and data-source domain
 shifts. It highlights the potential of USD-PG for enhancing domain generalization in tissue classification and its applicability in clinical settings.
 
-## Requirements
-- CUDA
-- 1×GPU
-- Python 3.7
-- numpy==1.21.5
-- pytorch==1.11.0
-- torchvision==0.12.0
-- scikit-learn==0.24.2
 ## Usage
 
 ### Dataset Preparation
@@ -34,6 +26,23 @@ You should download the GDPH-CRC-HE-MS dataset at [OneDrive](https://1drv.ms/u/c
 ```
 DATA/
 
+    |_one_percent_labeled/
+    |     |_ S01
+    |            |_ train
+    |                |_ BACK/
+    |                |_ NORM/
+    |                |_ MUC/
+    |                |_ DEB/
+    |                |_ LYM/
+    |                |_ ADI/
+    |                |_ STR/
+    |                |_ TUM/
+    |                |_ MUS/
+    |            |_ val
+    |                |_ ...
+    |     |_ S02
+    |     |_ S03
+    |     |_ ...
     |_ GDPH-CRC-HE-MS/
     |     |_ training/
     |         |_ S01/
@@ -54,8 +63,6 @@ DATA/
     |     |_ test/
     |         |_ S01/
     |            |_ .../
-    |_ NCT-CRC-HE-100K/
-    |      |_ ...
       
 ```
 
