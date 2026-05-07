@@ -68,26 +68,26 @@ DATA/
 
 ### Main training
 ```
-python main.py --...
+python 1-main_train.py --source_domain S03 --root ./DATA/GDPH-CRC-HE-MS/training/S01 --files ['preprocess/S03_LAB.yaml', 'preprocess/S03_HSV.yaml', 'preprocess/S03_HED.yaml']
 ```
 
 ### Fine-turning
 ```
-python main.py --...
+python 2-main_lincls.py --source_domain S03
 ```
 ### Testing
 ```
-python main.py --...
+python 3-patch_cls_score.py --source_domain S03 --target_domain S01
 ```
 ## Citation
 If you find the code useful, please consider citing our paper using the following BibTeX entry.
 ```
-@ARTICLE{lin2026usd-pg,
-  author={Lin, Jiatai and Li, Qian and Cui, Yanfen and Zhao, Bingchao and Deng, Tianpeng and Huang, Jingqi and Shi, Zhenwei and Cui, Enming and Liu, Zaiyi and Zhao, Ke and Han, Chu and Huang, Yanqi},
-  journal={Medical Image Analysis}, 
-  title={Unsupervised Single-Domain Generalization for Tissue Classification via Progressive Domain Transformation}, 
+@article{lin2026unsupervised,
+  title={Unsupervised single-domain generalization for tissue classification via progressive domain transformation},
+  author={Lin, Jiatai and Li, Qian and Cui, Yanfen and Zhao, Bingchao and Deng, Tianpeng and Huang, Jingqi and Shi, Zhenwei and Cui, Enming and Liu, Zaiyi and Zhao, Ke and others},
+  journal={Medical Image Analysis},
+  pages={104118},
   year={2026},
-  pages={},
-  doi={}
+  publisher={Elsevier}
 }
 ```
